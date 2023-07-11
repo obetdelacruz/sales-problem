@@ -1,3 +1,12 @@
+const productProfitArray = [
+  ["Product A", 1000],
+  ["Product B", -500],
+  ["Product C", 200],
+  ["Product D", -100],
+  ["Product E", 300],
+];
+
+//Top Product
 function topProduct(productProfitArray) {
   if (productProfitArray.length === 0) {
     return "No Data";
@@ -16,6 +25,7 @@ function topProduct(productProfitArray) {
   return topProduct;
 }
 
+//Bottom Product
 function bottomProduct(productProfitArray) {
   if (productProfitArray.length === 0) {
     return "No Data";
@@ -34,6 +44,7 @@ function bottomProduct(productProfitArray) {
   return bottomProduct;
 }
 
+//Zero Product
 function zeroProfitProduct(productProfitArray) {
   if (productProfitArray.length === 0) {
     return "No Data";
@@ -55,14 +66,6 @@ function zeroProfitProduct(productProfitArray) {
 
   return zeroProfitProduct;
 }
-
-const productProfitArray = [
-  ["Product A", 1000],
-  ["Product B", -500],
-  ["Product C", 200],
-  ["Product D", -100],
-  ["Product E", 300],
-];
 
 console.log(topProduct(productProfitArray)); // Output: Product A
 console.log(bottomProduct(productProfitArray)); // Output: Product B
